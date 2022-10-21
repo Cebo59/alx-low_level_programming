@@ -1,16 +1,11 @@
-#ifndef MAIN_H
-#define MAIN_H
+main.h content
 
-int _putchar(char c);
-int _isupper(int c);
-int _isdigit(int c);
-int mul(int a, int b);
-void print_numbers(void);
-void print_most_numbers(void);
-void more_numbers(void);
-void print_line(int n);
-void print_diagonal(int n);
-void print_square(int size);
-void print_triangle(int size);
+#ifndef main_h
+#define main_h
+#include <stdio.h>
+void positive_or_negative(int i);
+int largest_number(int a, int b, int c);
+int convert_day(int month, int day);
+void print_reaining_days(int month, int day, int year);
 
-#endif /* MAIN_H */
+#endif
