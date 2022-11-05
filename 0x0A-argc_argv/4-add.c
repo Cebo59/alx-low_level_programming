@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* main - adds positive numbers. * @argc: argument count * @argv: arguments
+* main - adds positive numbers.
+* @argc: argument count
+* @argv: arguments
 * Return: 0
 */
 int main(int argc, char **argv)
+
 {
 	int i, n, sum = 0;
 
