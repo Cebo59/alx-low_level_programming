@@ -1,12 +1,31 @@
-#ifndef _LINUX_STDDEF_H
-#define _LINUX_STDDEF_H
+#ifndef _STDDEF_H_
+#define _STDDEF_H_
 
-#include <uapi/linux/stddef.h>
+#include <sys/cdefs.h>
+#include <sys/_null.h>
+#include <sys/_types.h>
 
-#undef NULL
-#define NULL ((void *)0)
+typedef	__ptrdiff_t	ptrdiff_t;
 
-enum {
-	false	= 0,
-	true	= 1
-}
+#if __BSD_VISIBLE
+#ifndef _RUNE_T_DECLARED
+typedef	__rune_t	rune_t;
+#define	_RUNE_T_DECLARED
+#endif
+#endif
+
+#ifndef _SIZE_T_DECLARED
+typedef	__size_t	size_t;
+#define	_SIZE_T_DECLARED
+#endif
+
+#ifndef	__cplusplus
+#ifndef _WCHAR_T_DECLARED
+typedef	__wchar_t	wchar_t;
+#define	_WCHAR_T_DECLARED
+#endif
+#endif
+
+#define	offsetof(type, member)	__offsetof(type, member)
+
+#endif /* _STDDEF_H_ */
