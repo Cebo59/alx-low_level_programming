@@ -1,1 +1,1 @@
-5-hash_table_print.c
+6-hash_table_delete.c
