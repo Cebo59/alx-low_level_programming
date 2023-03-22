@@ -1,2 +1,1 @@
-school.c
-message.h
+main.c
